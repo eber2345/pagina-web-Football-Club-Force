@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("f.jpg");
+    background-size: cover;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    left: -320px;
+    transition: all ease-in-out 300ms;
+}
+
+.sidebar {
+    width: 300px;
+    height: 170%;
+    background: rgb(22, 20, 20);
+    overflow: auto; 
+    float: left;   
+}
+
+.sidebar img {
+    width: 250px;
+    display: block;
+    margin: 20px auto;
+    opacity: .7;   
+}
+
+.side-hide {
+    float: right;
+    margin: 12px;
+    color: rgb(255, 255, 255);
+    opacity: .7;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar ul li {
+    list-style: none;
+    padding: 16px 13px;
+}
+
+.sidebar ul li:hover {
+    background: #0d6397;
+    cursor: pointer;
+    font-family: unset;
+}
+
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .7;
+}
+
+.content {
+    padding: 25px;
+    font-size: 20px;
+    color: rgb(83, 174, 199);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.content h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-left: 310px;
+    text-align: center;
+    color: rgb(193, 198, 57);
+    font-family: fantasy;
+}
+
+
+.content p {
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 310px;
+}
+
+button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.show {
+    left: 0;
+}
